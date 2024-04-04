@@ -37,6 +37,8 @@
             chkCinture = new CheckBox();
             btnClacson = new Button();
             lstMonitor = new ListBox();
+            groupBox1 = new GroupBox();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // progressBar1
@@ -57,7 +59,7 @@
             // 
             // btnAccellera
             // 
-            btnAccellera.Location = new Point(653, 95);
+            btnAccellera.Location = new Point(116, 26);
             btnAccellera.Name = "btnAccellera";
             btnAccellera.Size = new Size(94, 29);
             btnAccellera.TabIndex = 2;
@@ -66,9 +68,9 @@
             // 
             // btnFrena
             // 
-            btnFrena.Location = new Point(553, 95);
+            btnFrena.Location = new Point(9, 26);
             btnFrena.Name = "btnFrena";
-            btnFrena.Size = new Size(94, 29);
+            btnFrena.Size = new Size(101, 29);
             btnFrena.TabIndex = 3;
             btnFrena.Text = "Frena";
             btnFrena.UseVisualStyleBackColor = true;
@@ -104,7 +106,7 @@
             // 
             // btnClacson
             // 
-            btnClacson.Location = new Point(606, 157);
+            btnClacson.Location = new Point(593, 157);
             btnClacson.Name = "btnClacson";
             btnClacson.Size = new Size(122, 47);
             btnClacson.TabIndex = 7;
@@ -120,22 +122,32 @@
             lstMonitor.Size = new Size(758, 104);
             lstMonitor.TabIndex = 8;
             // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(btnAccellera);
+            groupBox1.Controls.Add(btnFrena);
+            groupBox1.Location = new Point(526, 63);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(216, 68);
+            groupBox1.TabIndex = 9;
+            groupBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(groupBox1);
             Controls.Add(lstMonitor);
             Controls.Add(btnClacson);
             Controls.Add(chkCinture);
             Controls.Add(label1);
             Controls.Add(chkAccensione);
-            Controls.Add(btnFrena);
-            Controls.Add(btnAccellera);
             Controls.Add(lblVelocita);
             Controls.Add(progressBar1);
             Name = "Form1";
             Text = "Prof;AS 23/24 3G Lab 2.2;04/04/24; simulatore di un automobile";
+            groupBox1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -151,5 +163,6 @@
         private CheckBox chkCinture;
         private Button btnClacson;
         private ListBox lstMonitor;
+        private GroupBox groupBox1;
     }
 }
