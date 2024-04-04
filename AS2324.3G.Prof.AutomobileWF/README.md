@@ -8,3 +8,8 @@
 	vento a sfavore (-)
 		Acc -
 		Frenata +
+
+Limite velocità
+Autostrada 130
+Extraurbana 90
+Urbana 50

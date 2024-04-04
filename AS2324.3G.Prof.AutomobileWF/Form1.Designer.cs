@@ -38,6 +38,8 @@
             btnClacson = new Button();
             lstMonitor = new ListBox();
             groupBox1 = new GroupBox();
+            label2 = new Label();
+            cmbStrada = new ComboBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -132,11 +134,31 @@
             groupBox1.TabIndex = 9;
             groupBox1.TabStop = false;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(55, 163);
+            label2.Name = "label2";
+            label2.Size = new Size(52, 20);
+            label2.TabIndex = 10;
+            label2.Text = "Strada";
+            // 
+            // cmbStrada
+            // 
+            cmbStrada.FormattingEnabled = true;
+            cmbStrada.Items.AddRange(new object[] { "Autostrada (130 km/h)", "Extraurbana (90 km/h)", "Urbana (50 km/h)" });
+            cmbStrada.Location = new Point(113, 157);
+            cmbStrada.Name = "cmbStrada";
+            cmbStrada.Size = new Size(167, 28);
+            cmbStrada.TabIndex = 11;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(cmbStrada);
+            Controls.Add(label2);
             Controls.Add(groupBox1);
             Controls.Add(lstMonitor);
             Controls.Add(btnClacson);
@@ -164,5 +186,7 @@
         private Button btnClacson;
         private ListBox lstMonitor;
         private GroupBox groupBox1;
+        private Label label2;
+        private ComboBox cmbStrada;
     }
 }
