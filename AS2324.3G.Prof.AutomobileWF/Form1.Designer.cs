@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            progressBar1 = new ProgressBar();
+            prbVelocita = new ProgressBar();
             lblVelocita = new Label();
             btnAccellera = new Button();
             btnFrena = new Button();
@@ -43,12 +43,12 @@
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
-            // progressBar1
+            // prbVelocita
             // 
-            progressBar1.Location = new Point(32, 401);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(683, 29);
-            progressBar1.TabIndex = 0;
+            prbVelocita.Location = new Point(32, 401);
+            prbVelocita.Name = "prbVelocita";
+            prbVelocita.Size = new Size(683, 29);
+            prbVelocita.TabIndex = 0;
             // 
             // lblVelocita
             // 
@@ -67,6 +67,7 @@
             btnAccellera.TabIndex = 2;
             btnAccellera.Text = "Accellera";
             btnAccellera.UseVisualStyleBackColor = true;
+            btnAccellera.Click += btnAccellera_Click;
             // 
             // btnFrena
             // 
@@ -76,6 +77,7 @@
             btnFrena.TabIndex = 3;
             btnFrena.Text = "Frena";
             btnFrena.UseVisualStyleBackColor = true;
+            btnFrena.Click += btnFrena_Click;
             // 
             // chkAccensione
             // 
@@ -166,7 +168,7 @@
             Controls.Add(label1);
             Controls.Add(chkAccensione);
             Controls.Add(lblVelocita);
-            Controls.Add(progressBar1);
+            Controls.Add(prbVelocita);
             Name = "Form1";
             Text = "Prof;AS 23/24 3G Lab 2.2;04/04/24; simulatore di un automobile";
             groupBox1.ResumeLayout(false);
@@ -176,7 +178,7 @@
 
         #endregion
 
-        private ProgressBar progressBar1;
+        private ProgressBar prbVelocita;
         private Label lblVelocita;
         private Button btnAccellera;
         private Button btnFrena;
