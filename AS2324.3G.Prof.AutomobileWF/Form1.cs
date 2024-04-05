@@ -15,6 +15,8 @@ namespace AS2324._3G.Prof.AutomobileWF
             // parameters setting on progress bar
             prbVelocita.Minimum = 0;
             prbVelocita.Maximum = 160;
+
+            grbComandi.Enabled = false;
         }
 
         private void btnAccellera_Click(object sender, EventArgs e)
@@ -35,6 +37,15 @@ namespace AS2324._3G.Prof.AutomobileWF
         private void monitor()
         {
             prbVelocita.Value = (int)velocita;
+        }
+
+        private void chkAccensione_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkAccensione.Checked == true)
+                grbComandi.Enabled = true;
+            else
+                grbComandi.Enabled = false;
+
         }
     }
 }

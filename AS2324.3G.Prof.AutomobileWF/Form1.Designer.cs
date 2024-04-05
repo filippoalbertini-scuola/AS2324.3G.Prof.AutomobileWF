@@ -37,10 +37,10 @@
             chkCinture = new CheckBox();
             btnClacson = new Button();
             lstMonitor = new ListBox();
-            groupBox1 = new GroupBox();
+            grbComandi = new GroupBox();
             label2 = new Label();
             cmbStrada = new ComboBox();
-            groupBox1.SuspendLayout();
+            grbComandi.SuspendLayout();
             SuspendLayout();
             // 
             // prbVelocita
@@ -88,6 +88,7 @@
             chkAccensione.TabIndex = 4;
             chkAccensione.Text = "Accendi il motore";
             chkAccensione.UseVisualStyleBackColor = true;
+            chkAccensione.CheckedChanged += chkAccensione_CheckedChanged;
             // 
             // label1
             // 
@@ -126,15 +127,15 @@
             lstMonitor.Size = new Size(758, 104);
             lstMonitor.TabIndex = 8;
             // 
-            // groupBox1
+            // grbComandi
             // 
-            groupBox1.Controls.Add(btnAccellera);
-            groupBox1.Controls.Add(btnFrena);
-            groupBox1.Location = new Point(526, 63);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(216, 68);
-            groupBox1.TabIndex = 9;
-            groupBox1.TabStop = false;
+            grbComandi.Controls.Add(btnAccellera);
+            grbComandi.Controls.Add(btnFrena);
+            grbComandi.Location = new Point(526, 63);
+            grbComandi.Name = "grbComandi";
+            grbComandi.Size = new Size(216, 68);
+            grbComandi.TabIndex = 9;
+            grbComandi.TabStop = false;
             // 
             // label2
             // 
@@ -161,7 +162,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(cmbStrada);
             Controls.Add(label2);
-            Controls.Add(groupBox1);
+            Controls.Add(grbComandi);
             Controls.Add(lstMonitor);
             Controls.Add(btnClacson);
             Controls.Add(chkCinture);
@@ -171,7 +172,7 @@
             Controls.Add(prbVelocita);
             Name = "Form1";
             Text = "Prof;AS 23/24 3G Lab 2.2;04/04/24; simulatore di un automobile";
-            groupBox1.ResumeLayout(false);
+            grbComandi.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -187,7 +188,7 @@
         private CheckBox chkCinture;
         private Button btnClacson;
         private ListBox lstMonitor;
-        private GroupBox groupBox1;
+        private GroupBox grbComandi;
         private Label label2;
         private ComboBox cmbStrada;
     }
