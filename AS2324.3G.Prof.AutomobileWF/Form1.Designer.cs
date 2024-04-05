@@ -30,7 +30,7 @@
         {
             prbVelocita = new ProgressBar();
             lblVelocita = new Label();
-            btnAccellera = new Button();
+            btnAccelera = new Button();
             btnFrena = new Button();
             chkAccensione = new CheckBox();
             label1 = new Label();
@@ -59,15 +59,15 @@
             lblVelocita.TabIndex = 1;
             lblVelocita.Text = "0 km/h";
             // 
-            // btnAccellera
+            // btnAccelera
             // 
-            btnAccellera.Location = new Point(116, 26);
-            btnAccellera.Name = "btnAccellera";
-            btnAccellera.Size = new Size(94, 29);
-            btnAccellera.TabIndex = 2;
-            btnAccellera.Text = "Accellera";
-            btnAccellera.UseVisualStyleBackColor = true;
-            btnAccellera.Click += btnAccellera_Click;
+            btnAccelera.Location = new Point(116, 26);
+            btnAccelera.Name = "btnAccelera";
+            btnAccelera.Size = new Size(94, 29);
+            btnAccelera.TabIndex = 2;
+            btnAccelera.Text = "Accelera";
+            btnAccelera.UseVisualStyleBackColor = true;
+            btnAccelera.Click += btnAccelera_Click;
             // 
             // btnFrena
             // 
@@ -129,7 +129,7 @@
             // 
             // grbComandi
             // 
-            grbComandi.Controls.Add(btnAccellera);
+            grbComandi.Controls.Add(btnAccelera);
             grbComandi.Controls.Add(btnFrena);
             grbComandi.Location = new Point(526, 63);
             grbComandi.Name = "grbComandi";
@@ -181,7 +181,7 @@
 
         private ProgressBar prbVelocita;
         private Label lblVelocita;
-        private Button btnAccellera;
+        private Button btnAccelera;
         private Button btnFrena;
         private CheckBox chkAccensione;
         private Label label1;

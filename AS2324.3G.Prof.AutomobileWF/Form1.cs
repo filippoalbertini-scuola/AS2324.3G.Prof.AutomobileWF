@@ -3,7 +3,7 @@ namespace AS2324._3G.Prof.AutomobileWF
     public partial class Form1 : Form
     {
 
-        const int stepAccellerazione = 10;
+        const int stepAccelerazione = 10;
         const int stepFrenata = -5;
 
         double velocita = 0;
@@ -19,9 +19,9 @@ namespace AS2324._3G.Prof.AutomobileWF
             grbComandi.Enabled = false;
         }
 
-        private void btnAccellera_Click(object sender, EventArgs e)
+        private void btnAccelera_Click(object sender, EventArgs e)
         {
-            velocita += stepAccellerazione;
+            velocita += stepAccelerazione;
 
             monitor();
         }
