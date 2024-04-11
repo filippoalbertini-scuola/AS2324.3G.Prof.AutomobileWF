@@ -96,9 +96,9 @@
             lblVento.AutoSize = true;
             lblVento.Location = new Point(494, 13);
             lblVento.Name = "lblVento";
-            lblVento.Size = new Size(105, 20);
+            lblVento.Size = new Size(97, 20);
             lblVento.TabIndex = 5;
-            lblVento.Text = "Vento 10 km/h";
+            lblVento.Text = "Vento 0 km/h";
             // 
             // chkCinture
             // 
