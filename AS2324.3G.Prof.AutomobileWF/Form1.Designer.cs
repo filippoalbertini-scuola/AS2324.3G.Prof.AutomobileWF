@@ -33,13 +33,14 @@
             btnAccelera = new Button();
             btnFrena = new Button();
             chkAccensione = new CheckBox();
-            label1 = new Label();
+            lblVento = new Label();
             chkCinture = new CheckBox();
             btnClacson = new Button();
             lstMonitor = new ListBox();
             grbComandi = new GroupBox();
             label2 = new Label();
             cmbStrada = new ComboBox();
+            lblIncremento = new Label();
             grbComandi.SuspendLayout();
             SuspendLayout();
             // 
@@ -90,14 +91,14 @@
             chkAccensione.UseVisualStyleBackColor = true;
             chkAccensione.CheckedChanged += chkAccensione_CheckedChanged;
             // 
-            // label1
+            // lblVento
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(494, 13);
-            label1.Name = "label1";
-            label1.Size = new Size(105, 20);
-            label1.TabIndex = 5;
-            label1.Text = "Vento 10 km/h";
+            lblVento.AutoSize = true;
+            lblVento.Location = new Point(494, 13);
+            lblVento.Name = "lblVento";
+            lblVento.Size = new Size(105, 20);
+            lblVento.TabIndex = 5;
+            lblVento.Text = "Vento 10 km/h";
             // 
             // chkCinture
             // 
@@ -111,12 +112,13 @@
             // 
             // btnClacson
             // 
-            btnClacson.Location = new Point(593, 157);
+            btnClacson.Location = new Point(577, 187);
             btnClacson.Name = "btnClacson";
             btnClacson.Size = new Size(122, 47);
             btnClacson.TabIndex = 7;
             btnClacson.Text = "Clacson";
             btnClacson.UseVisualStyleBackColor = true;
+            btnClacson.Click += btnClacson_Click;
             // 
             // lstMonitor
             // 
@@ -155,6 +157,15 @@
             cmbStrada.Size = new Size(167, 28);
             cmbStrada.TabIndex = 11;
             // 
+            // lblIncremento
+            // 
+            lblIncremento.AutoSize = true;
+            lblIncremento.Location = new Point(577, 143);
+            lblIncremento.Name = "lblIncremento";
+            lblIncremento.Size = new Size(134, 20);
+            lblIncremento.TabIndex = 5;
+            lblIncremento.Text = "Incremento 0 km/h";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -166,7 +177,8 @@
             Controls.Add(lstMonitor);
             Controls.Add(btnClacson);
             Controls.Add(chkCinture);
-            Controls.Add(label1);
+            Controls.Add(lblIncremento);
+            Controls.Add(lblVento);
             Controls.Add(chkAccensione);
             Controls.Add(lblVelocita);
             Controls.Add(prbVelocita);
@@ -184,12 +196,13 @@
         private Button btnAccelera;
         private Button btnFrena;
         private CheckBox chkAccensione;
-        private Label label1;
+        private Label lblVento;
         private CheckBox chkCinture;
         private Button btnClacson;
         private ListBox lstMonitor;
         private GroupBox grbComandi;
         private Label label2;
         private ComboBox cmbStrada;
+        private Label lblIncremento;
     }
 }
